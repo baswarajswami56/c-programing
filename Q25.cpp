@@ -29,7 +29,9 @@ public:
     }
 
     void display() {
-        cout << id << " " << name << " " << salary << endl;
+        cout << "ID: " << id
+             << "\nName: " << name
+             << "\nSalary: " << salary << "\n\n";
     }
 };
 
