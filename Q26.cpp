@@ -30,7 +30,7 @@ public:
 int main() {
     Rectangle r1;       // Default
     Rectangle r2(10,5); // Parameterized
-    Rectangle r3(r2);   // Copy
+    Rectangle r3(8,10);   // Copy
 
     r1.area();
     r2.area();
