@@ -5,18 +5,15 @@ class Rectangle {
     int length, breadth;
 
 public:
-    // Default constructor
     Rectangle() {
         length = breadth = 0;
     }
 
-    // Parameterized constructor
     Rectangle(int l, int b) {
         length = l;
         breadth = b;
     }
 
-    // Copy constructor
     Rectangle(const Rectangle &r) {
         length = r.length;
         breadth = r.breadth;
@@ -28,9 +25,9 @@ public:
 };
 
 int main() {
-    Rectangle r1;       // Default
-    Rectangle r2(10,5); // Parameterized
-    Rectangle r3(8,10);   // Copy
+    Rectangle r1;       
+    Rectangle r2(10,5); 
+    Rectangle r3(8,10);   
 
     r1.area();
     r2.area();
