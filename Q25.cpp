@@ -7,21 +7,18 @@ class Employee {
     float salary;
 
 public:
-    // Default constructor
     Employee() {
         id = 0;
         name = "Unknown";
         salary = 0;
     }
 
-    // Parameterized constructor
     Employee(int i, string n, float s) {
         id = i;
         name = n;
         salary = s;
     }
 
-    // Copy constructor
     Employee(const Employee &e) {
         id = e.id;
         name = e.name;
@@ -36,9 +33,9 @@ public:
 };
 
 int main() {
-    Employee e1;                       // Default
-    Employee e2(20, "Baswaraj", 50000); // Parameterized
-    Employee e3(e2);                   // Copy
+    Employee e1;                       
+    Employee e2(20, "Baswaraj", 50000); 
+    Employee e3(e2);                   
 
     e1.display();
     e2.display();
