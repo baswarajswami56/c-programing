@@ -7,21 +7,18 @@ class Product {
     float price;
 
 public:
-    // Default constructor
     Product() {
         id = 0;
         name = "Unknown";
         price = 0;
     }
 
-    // Parameterized constructor
     Product(int i, string n, float p) {
         id = i;
         name = n;
         price = p;
     }
 
-    // Copy constructor
     Product(const Product &p) {
         id = p.id;
         name = p.name;
@@ -36,9 +33,9 @@ public:
 };
 
 int main() {
-    Product p1;                    // Default
-    Product p2(20, "Laptop", 50000); // Parameterized
-    Product p3(17, "PC", 500000);   // Copy
+    Product p1;                    
+    Product p2(20, "Laptop", 50000); 
+    Product p3(17, "PC", 500000);  
 
     p1.display();
     p2.display();
