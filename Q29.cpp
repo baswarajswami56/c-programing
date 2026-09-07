@@ -8,7 +8,6 @@ private:
     double height;
 
 public:
-    // 1. Default Constructor
     Box() {
         length = 0;
         width = 0;
@@ -16,7 +15,6 @@ public:
         cout << "Default Constructor called." << endl;
     }
 
-    // 2. Parameterized Constructor
     Box(double l, double w, double h) {
         length = l;
         width = w;
@@ -24,7 +22,6 @@ public:
         cout << "Parameterized Constructor called." << endl;
     }
 
-    // 3. Copy Constructor
     Box(const Box &obj) {
         length = obj.length;
         width = obj.width;
@@ -39,15 +36,12 @@ public:
 };
 
 int main() {
-    // Calling Default Constructor
     Box b1;
     b1.displayVolume();
 
-    // Calling Parameterized Constructor
     Box b2(10.5, 5.5, 4.0);
     b2.displayVolume();
 
-    // Calling Copy Constructor (creates b3 as a copy of b2)
     Box b3 = b2; 
     b3.displayVolume();
 
